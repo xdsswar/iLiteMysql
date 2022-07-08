@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="353.0" prefWidth="559.0" styleClass="about-base" stylesheets="@../../main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inv.ui.ctrl.about.About">
+   <children>
+      <AnchorPane layoutX="162.0" layoutY="68.0" prefHeight="71.0" prefWidth="559.0" styleClass="about-header" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="15.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="6.0">
+               <image>
+                  <Image url="@../../assets/icon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="titleLabel" layoutX="92.0" layoutY="27.0" styleClass="about-title" text="InvMaster" AnchorPane.leftAnchor="90.0" />
+         </children>
+      </AnchorPane>
+      <VBox alignment="CENTER_LEFT" layoutX="43.0" layoutY="98.0" prefHeight="209.0" prefWidth="477.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Label fx:id="softNameLabel" styleClass="about-content-title" text="Software Name">
+               <VBox.margin>
+                  <Insets bottom="2.0" />
+               </VBox.margin></Label>
+            <Label fx:id="softNameDescriptionLabel" styleClass="about-content-description" text="Description">
+               <VBox.margin>
+                  <Insets bottom="6.0" />
+               </VBox.margin></Label>
+            <Label fx:id="licenceLabel" styleClass="about-content-title" text="Licensed to">
+               <VBox.margin>
+                  <Insets bottom="2.0" />
+               </VBox.margin></Label>
+            <Label fx:id="licenseDescriptionLabel" styleClass="about-content-description" text="Licence Description ">
+               <VBox.margin>
+                  <Insets bottom="6.0" />
+               </VBox.margin></Label>
+            <Label fx:id="evantoUserLabel" layoutX="10.0" layoutY="117.0" styleClass="about-content-title" text="Evanto User">
+               <VBox.margin>
+                  <Insets bottom="2.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="evantoUserLabelDescription" layoutX="10.0" layoutY="136.0" styleClass="about-content-description" text="Evanto Username">
+               <VBox.margin>
+                  <Insets bottom="6.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="purchaseCodeLabel" layoutX="10.0" layoutY="145.0" styleClass="about-content-title" text="Purchese Code">
+               <VBox.margin>
+                  <Insets bottom="2.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="purchaseCodeLabelDescription" layoutX="10.0" layoutY="162.0" styleClass="about-content-description" text="Evanto Purchase code">
+               <VBox.margin>
+                  <Insets bottom="6.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="javaVersion" styleClass="about-content-title" text="Java Version">
+               <VBox.margin>
+                  <Insets bottom="2.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <Label fx:id="copyrightLabel" alignment="CENTER" layoutX="258.0" layoutY="313.0" styleClass="about-copyright" text="Copyright" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>

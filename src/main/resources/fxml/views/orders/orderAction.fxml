@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.xd.controls.XButton?>
+<?import com.xd.ss.war.awesome.FontAwesomeIconView?>
+<?import com.xd.ss.war.materialicon.MaterialIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="708.0" prefWidth="1046.0" stylesheets="@../../../main.css" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="70.0" prefWidth="2.0" styleClass="info-box-1-side" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane layoutX="666.0" layoutY="247.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="innerOrderLeftPane" layoutX="26.0" layoutY="164.0" prefHeight="200.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="1.0" />
+            <AnchorPane fx:id="innerOrderRightPane" layoutX="490.0" layoutY="211.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #DFE5E9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane prefHeight="495.0" prefWidth="4000.0" style="-fx-background-color: #DFE5E9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane layoutX="222.0" layoutY="126.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                               
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="632.0" prefWidth="812.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <AnchorPane prefHeight="40.0" prefWidth="250.0" styleClass="list-bottom-border" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <VBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="4.0" prefHeight="38.0" prefWidth="189.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <Label styleClass="unit-section-header-label" text="Create or Edit Order">
+                                                         <VBox.margin>
+                                                            <Insets left="5.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </VBox>
+                                                <HBox alignment="CENTER_RIGHT" layoutX="612.0" layoutY="-31.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <XButton fx:id="closeNewOrder" contentDisplay="CENTER" graphicTextGap="0.0" prefWidth="40.0" styleClass="unit-list-btn" text=" ">
+                                                         <HBox.margin>
+                                                            <Insets right="10.0" />
+                                                         </HBox.margin>
+                                                   <graphic>
+                                                      <MaterialIconView glyphName="CLOSE" size="24" styleClass="hone-dots-icons" />
+                                                   </graphic>
+                                                      </XButton>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="40.0">
+                                       <children>
+                                          <AnchorPane maxHeight="150.0" minHeight="140.0" prefHeight="140.0" prefWidth="200.0" styleClass="orders-action-top-panel">
+                                             <children>
+                                                <HBox layoutX="129.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <AnchorPane prefHeight="200.0" prefWidth="3000.0">
+                                                         <children>
+                                                            <GridPane layoutX="100.0" layoutY="30.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                                              <columnConstraints>
+                                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                              </columnConstraints>
+                                                              <rowConstraints>
+                                                                <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                              </rowConstraints>
+                                                               <children>
+                                                                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <Label maxWidth="44.0" minWidth="44.0" prefHeight="20.0" prefWidth="44.0" styleClass="unit-labels" text="Name" />
+                                                                        <TextField fx:id="clientNameText" editable="false" prefHeight="30.0" prefWidth="1000.0" styleClass="unit-text-input">
+                                                                           <HBox.margin>
+                                                                              <Insets left="5.0" />
+                                                                           </HBox.margin>
+                                                                        </TextField>
+                                                                        <XButton fx:id="selectClientBtn" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="30.0" prefWidth="30.0" styleClass="order-action-add-client-btn" text=" ">
+                                                                           <graphic>
+                                                                              <FontAwesomeIconView glyphName="PLUS" size="16" styleClass="hone-dots-icons" />
+                                                                           </graphic>
+                                                                           <HBox.margin>
+                                                                              <Insets left="30.0" />
+                                                                           </HBox.margin>
+                                                                        </XButton>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                                                     <children>
+                                                                        <Label maxWidth="44.0" minWidth="44.0" prefHeight="20.0" prefWidth="44.0" styleClass="unit-labels" text="Email" />
+                                                                        <TextField fx:id="clientEmailText" editable="false" prefHeight="30.0" prefWidth="1000.0" styleClass="unit-text-input">
+                                                                           <HBox.margin>
+                                                                              <Insets left="5.0" right="60.0" />
+                                                                           </HBox.margin>
+                                                                        </TextField>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                                                     <children>
+                                                                        <Label maxWidth="44.0" minWidth="44.0" prefHeight="20.0" prefWidth="44.0" styleClass="unit-labels" text="Phone" />
+                                                                        <TextField fx:id="clientPhoneText" editable="false" prefHeight="30.0" prefWidth="1000.0" styleClass="unit-text-input">
+                                                                           <HBox.margin>
+                                                                              <Insets left="5.0" right="60.0" />
+                                                                           </HBox.margin>
+                                                                        </TextField>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </GridPane>
+                                                            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="8.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="16.0">
+                                                               <image>
+                                                                  <Image url="@../../../assets/customer.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </children></AnchorPane>
+                                                      <AnchorPane prefHeight="200.0" prefWidth="3000.0">
+                                                         <children>
+                                                            <GridPane layoutX="175.0" layoutY="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                                              <columnConstraints>
+                                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                              </columnConstraints>
+                                                              <rowConstraints>
+                                                                <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                              </rowConstraints>
+                                                               <children>
+                                                                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <Label fx:id="orderIdLabel" prefHeight="20.0" styleClass="unit-labels" text="#">
+                                                                           <HBox.margin>
+                                                                              <Insets right="30.0" />
+                                                                           </HBox.margin>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                                                     <children>
+                                                                        <Label maxWidth="75.0" minWidth="75.0" prefHeight="20.0" prefWidth="75.0" styleClass="unit-labels" text="Date">
+                                                                           <HBox.margin>
+                                                                              <Insets right="30.0" />
+                                                                           </HBox.margin>
+                                                                        </Label>
+                                                                        <TextField fx:id="dateTextField" alignment="CENTER_RIGHT" editable="false" prefHeight="30.0" prefWidth="1000.0" styleClass="unit-text-input">
+                                                                           <HBox.margin>
+                                                                              <Insets right="30.0" />
+                                                                           </HBox.margin>
+                                                                        </TextField>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                                                     <children>
+                                                                        <Label maxWidth="75.0" minWidth="75.0" prefHeight="20.0" prefWidth="75.0" styleClass="unit-labels" text="Due Date">
+                                                                           <HBox.margin>
+                                                                              <Insets right="30.0" />
+                                                                           </HBox.margin>
+                                                                        </Label>
+                                                                        <TextField fx:id="dueDateTextField" alignment="CENTER_RIGHT" editable="false" prefHeight="30.0" prefWidth="1000.0" styleClass="unit-text-input">
+                                                                           <HBox.margin>
+                                                                              <Insets right="30.0" />
+                                                                           </HBox.margin>
+                                                                        </TextField>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </GridPane>
+                                                         </children></AnchorPane>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane minWidth="200.0" prefHeight="5000.0" prefWidth="200.0">
+                                             <children>
+                                                <AnchorPane maxHeight="30.0" minHeight="30.0" prefHeight="30.0" styleClass="order-list-cell-header" stylesheets="@../../../main.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <HBox layoutX="-36.0" layoutY="-24.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                         <children>
+                                                            <AnchorPane prefHeight="40.0" prefWidth="2000.0">
+                                                               <children>
+                                                                  <VBox alignment="CENTER_LEFT" layoutX="74.0" layoutY="-86.0" prefHeight="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                     <children>
+                                                                        <Label minWidth="70.0" styleClass="order-list-cell-header-label" text="Product Name">
+                                                                           <VBox.margin>
+                                                                              <Insets left="15.0" />
+                                                                           </VBox.margin>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </VBox>
+                                                               </children>
+                                                            </AnchorPane>
+                                                            <AnchorPane minWidth="100.0" prefHeight="200.0" prefWidth="110.0">
+                                                               <children>
+                                                                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                     <children>
+                                                                        <Label minWidth="60.0" prefWidth="60.0" styleClass="order-list-cell-header-label" text="Qty">
+                                                                           <HBox.margin>
+                                                                              <Insets left="27.0" />
+                                                                           </HBox.margin>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </AnchorPane>
+                                                            <AnchorPane layoutX="899.0" layoutY="10.0" minWidth="100.0" prefHeight="200.0" prefWidth="110.0">
+                                                               <children>
+                                                                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                     <children>
+                                                                        <Label minWidth="60.0" prefWidth="60.0" styleClass="order-list-cell-header-label" text="Disc">
+                                                                           <HBox.margin>
+                                                                              <Insets left="25.0" />
+                                                                           </HBox.margin>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </AnchorPane>
+                                                            <AnchorPane layoutX="899.0" layoutY="10.0" minWidth="100.0" prefHeight="200.0" prefWidth="130.0">
+                                                               <children>
+                                                                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                     <children>
+                                                                        <Label minWidth="60.0" prefWidth="60.0" styleClass="order-list-cell-header-label" text="Price">
+                                                                           <HBox.margin>
+                                                                              <Insets left="17.0" />
+                                                                           </HBox.margin>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </AnchorPane>
+                                                            <AnchorPane layoutX="899.0" layoutY="10.0" minWidth="100.0" prefHeight="200.0" prefWidth="130.0">
+                                                               <children>
+                                                                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                     <children>
+                                                                        <Label minWidth="60.0" prefWidth="60.0" styleClass="order-list-cell-header-label" text="Total">
+                                                                           <HBox.margin>
+                                                                              <Insets left="17.0" />
+                                                                           </HBox.margin>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </AnchorPane>
+                                                            <AnchorPane layoutX="939.0" layoutY="10.0" minWidth="40.0" prefHeight="40.0" prefWidth="40.0">
+                                                               <children>
+                                                                  <VBox alignment="CENTER" layoutX="-36.0" layoutY="-80.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                                <ListView fx:id="itemsListView" layoutX="445.0" layoutY="148.0" prefHeight="200.0" prefWidth="200.0" styleClass="unit-list-cell" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="31.0">
+                                                   <placeholder>
+                                                      <Label styleClass="unit-labels" text="No Products added yet!" />
+                                                   </placeholder>
+                                                </ListView>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane maxHeight="200.0" minHeight="210.0" prefHeight="210.0" prefWidth="1002.0" styleClass="orders-action-bottom-panel">
+                                             <children>
+                                                <GridPane layoutX="748.0" layoutY="6.0" prefHeight="200.0" prefWidth="387.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="4.0">
+                                                  <columnConstraints>
+                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                  </columnConstraints>
+                                                  <rowConstraints>
+                                                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                  </rowConstraints>
+                                                   <children>
+                                                      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <HBox alignment="CENTER_LEFT" maxWidth="140.0" minWidth="140.0" prefHeight="40.0" prefWidth="140.0">
+                                                               <children>
+                                                                  <Label styleClass="unit-labels" text="Subtotal">
+                                                                     <HBox.margin>
+                                                                        <Insets right="30.0" />
+                                                                     </HBox.margin>
+                                                                  </Label>
+                                                               </children>
+                                                               <HBox.margin>
+                                                                  <Insets left="5.0" right="5.0" />
+                                                               </HBox.margin>
+                                                            </HBox>
+                                                            <TextField fx:id="subtotalField" alignment="CENTER_RIGHT" editable="false" prefHeight="25.0" prefWidth="150.0" styleClass="unit-text-input" text="0.00" />
+                                                         </children></HBox>
+                                                      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                                         <children>
+                                                            <HBox alignment="CENTER_LEFT" maxWidth="140.0" minWidth="140.0" prefHeight="40.0" prefWidth="140.0">
+                                                               <children>
+                                                                  <Label styleClass="unit-labels" text="Discount">
+                                                                     <HBox.margin>
+                                                                        <Insets right="30.0" />
+                                                                     </HBox.margin>
+                                                                  </Label>
+                                                               </children>
+                                                               <HBox.margin>
+                                                                  <Insets left="5.0" right="5.0" />
+                                                               </HBox.margin>
+                                                            </HBox>
+                                                            <TextField fx:id="discountField" alignment="CENTER_RIGHT" editable="false" prefWidth="150.0" styleClass="unit-text-input" text="0.00" />
+                                                         </children></HBox>
+                                                      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                                         <children>
+                                                            <HBox alignment="CENTER_LEFT" maxWidth="140.0" minWidth="140.0" prefHeight="100.0" prefWidth="140.0">
+                                                               <children>
+                                                                  <Label styleClass="unit-labels" text="Tax">
+                                                                     <HBox.margin>
+                                                                        <Insets right="30.0" />
+                                                                     </HBox.margin>
+                                                                  </Label>
+                                                               </children>
+                                                               <HBox.margin>
+                                                                  <Insets left="5.0" right="5.0" />
+                                                               </HBox.margin>
+                                                            </HBox>
+                                                            <TextField fx:id="taxField" alignment="CENTER_RIGHT" editable="false" prefWidth="150.0" styleClass="unit-text-input" text="0.00" />
+                                                         </children></HBox>
+                                                      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+                                                         <children>
+                                                            <HBox alignment="CENTER_LEFT" maxWidth="140.0" minWidth="140.0" prefHeight="100.0" prefWidth="140.0">
+                                                               <children>
+                                                                  <Label styleClass="unit-labels" text="Amount Due">
+                                                                     <HBox.margin>
+                                                                        <Insets right="30.0" />
+                                                                     </HBox.margin>
+                                                                  </Label>
+                                                               </children>
+                                                               <HBox.margin>
+                                                                  <Insets left="5.0" right="5.0" />
+                                                               </HBox.margin>
+                                                            </HBox>
+                                                            <TextField fx:id="totalField" alignment="CENTER_RIGHT" prefWidth="150.0" styleClass="unit-text-input" text="0.00" />
+                                                         </children></HBox>
+                                                      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="4">
+                                                         <children>
+                                                            <XButton fx:id="saveOrderBtn" prefHeight="30.0" prefWidth="150.0" styleClass="prd-save-button" text="Save" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </GridPane>
+                                             </children></AnchorPane>
+                                       </children>
+                                    </VBox>
+                                       </children>
+                                    </AnchorPane>
+
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

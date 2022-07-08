@@ -1,0 +1,18 @@
+
+.products-combobox{
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #6e707e;
+    -fx-font-family: 'Roboto Regular';
+    -fx-font-size: 13px;
+    -fx-border-color: #e4e4ee;
+    -fx-padding: -5;
+    -fx-max-height: 30;
+}
+
+.products-error-combobox{
+    -fx-border-color: #ff004e;
+    -fx-border-width: 1;
+}
+

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.xd.controls.XButton?>
+<?import com.xd.ss.war.awesome.FontAwesomeIconView?>
+<?import com.xd.ss.war.materialicon.MaterialIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="base" maxHeight="530.0" maxWidth="800.0" minHeight="530.0" minWidth="800.0" prefHeight="530.0" prefWidth="800.0" styleClass="l-base" stylesheets="@../main.css" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inv.ui.ctrl.Login">
+   <children>
+      <HBox fx:id="loginDialog" layoutX="286.0" layoutY="209.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane minWidth="400.0" prefHeight="530.0" prefWidth="400.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" layoutX="78.0" layoutY="171.0" prefHeight="200.0" prefWidth="187.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+                     <children>
+                        <AnchorPane prefHeight="228.0" prefWidth="400.0">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                           <children>
+                              <Label layoutX="71.0" layoutY="86.0" styleClass="login-big-label" text="Sign In" AnchorPane.leftAnchor="71.0" />
+                              <Label layoutX="158.0" layoutY="152.0" styleClass="login-small-label" text="to continue" AnchorPane.leftAnchor="158.0" />
+                           </children>
+                        </AnchorPane>
+                        <Label prefWidth="260.0" styleClass="login-settings-input-labels" text="Username">
+                           <VBox.margin>
+                              <Insets bottom="4.0" />
+                           </VBox.margin></Label>
+                        <AnchorPane>
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="70.0" right="70.0" />
+                           </VBox.margin>
+                           <children>
+                              <TextField fx:id="userText" prefHeight="35.0" prefWidth="260.0" promptText="User" styleClass="login-input" />
+                              <FontAwesomeIconView glyphName="USER" layoutX="237.0" layoutY="27.0" size="16" styleClass="login-input-ic" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="9.0" />
+                           </children>
+                        </AnchorPane>
+                        <Label prefWidth="260.0" styleClass="login-settings-input-labels" text="Password">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin></Label>
+                        <AnchorPane>
+                           <children>
+                              <PasswordField fx:id="passText" prefHeight="35.0" prefWidth="260.0" promptText="Password" styleClass="login-input" />
+                              <MaterialIconView glyphName="VPN_KEY" layoutX="240.0" layoutY="27.0" size="16" styleClass="login-input-ic" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="40.0" left="70.0" right="70.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <XButton fx:id="loginBtn" minHeight="38.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="257.0" styleClass="login-btn" text="Sign In">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="69.0" right="69.0" />
+                           </VBox.margin>
+                        </XButton>
+                        <Label fx:id="errorLabel" styleClass="login-error-label" text="Error label" visible="false">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin></Label>
+                     </children>
+                  </VBox>
+                  <Label fx:id="settingsBtn" graphicTextGap="2.0" layoutX="316.0" layoutY="6.0" styleClass="login-settings-label" text="Settings" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="6.0">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="GEAR" size="14" styleClass="login-settings-label-ic" />
+                     </graphic>
+                  </Label>
+                  <ImageView fx:id="headerIcon" fitHeight="23.0" fitWidth="23.0" layoutX="8.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="4.0">
+                     <image>
+                        <Image url="@../assets/icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label graphicTextGap="2.0" layoutX="39.0" layoutY="3.0" styleClass="login-title-label" text="Sign In" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="6.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane minWidth="400.0" prefHeight="200.0" prefWidth="400.0" styleClass="login-right-box">
+               <children>
+                  <VBox alignment="BOTTOM_CENTER" layoutX="164.0" layoutY="132.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+                     <children>
+                        <ImageView fx:id="loginImageView" fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets bottom="100.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../assets/slide/7.png" />
+                           </image>
+                        </ImageView>
+                        <AnchorPane>
+                           <children>
+                              <HBox alignment="CENTER" layoutX="100.0" layoutY="22.0" prefHeight="47.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                                 <children>
+                                    <ImageView fx:id="bottomIcon" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/icon.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label styleClass="login-bottom-label" text="Made with">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Hyperlink fx:id="inteliJLink" contentDisplay="RIGHT" styleClass="login-bottom-hipper" text="Intelij">
+                                       <graphic>
+                                          <FontAwesomeIconView glyphName="HEART" size="10" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="login-bottom-ic" />
+                                       </graphic>
+                                    </Hyperlink>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </children></VBox>
+                  <MaterialIconView fx:id="exitBtn" glyphName="CLOSE" layoutX="368.0" layoutY="31.0" size="23" styleClass="login-close-btn" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="2.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="settingsDialog" maxHeight="530.0" maxWidth="800.0" minHeight="530.0" minWidth="800.0" prefHeight="530.0" prefWidth="800.0" styleClass="login-settings-pane" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="400.0" prefHeight="200.0" prefWidth="200.0" styleClass="login-settings-box" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox layoutX="19.0" layoutY="40.0" prefHeight="490.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+                     <children>
+                        <Label styleClass="login-settings-input-labels" text="Database Server">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="70.0" right="70.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="serverTxt" prefHeight="35.0" promptText="localhost" styleClass="login-input">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="70.0" right="70.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label styleClass="login-settings-input-labels" text="Database Port">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="70.0" right="70.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="portTxt" prefHeight="35.0" promptText="3306" styleClass="login-input">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="70.0" right="70.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label styleClass="login-settings-input-labels" text="Database Name">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="70.0" right="70.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="dbNameTxt" prefHeight="35.0" promptText="Database Name" styleClass="login-input">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="70.0" right="70.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label styleClass="login-settings-input-labels" text="Database User">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="70.0" right="70.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="dbUserTxt" prefHeight="35.0" promptText="Database User" styleClass="login-input">
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="70.0" right="70.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label styleClass="login-settings-input-labels" text="Database Password">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="70.0" right="70.0" />
+                           </VBox.margin>
+                        </Label>
+                        <PasswordField fx:id="dbPassTxt" prefHeight="35.0" promptText="Password" styleClass="login-input">
+                           <VBox.margin>
+                              <Insets left="70.0" right="70.0" />
+                           </VBox.margin>
+                        </PasswordField>
+                        <CheckBox fx:id="useSslCheckBox" mnemonicParsing="false" text="Use SSL">
+                           <VBox.margin>
+                              <Insets left="70.0" top="15.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <XButton fx:id="applySettingsBtn" minHeight="38.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="260.0" styleClass="login-btn" text="Apply">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="70.0" right="70.0" top="15.0" />
+                           </VBox.margin>
+                        </XButton>
+                        <Label fx:id="settingsErrorLabel" alignment="CENTER" prefHeight="22.0" prefWidth="400.0" styleClass="login-error-label" text="Error label" visible="false" />
+                     </children>
+                  </VBox>
+                  <MaterialIconView fx:id="settingsClose" glyphName="CLOSE" layoutX="368.0" layoutY="32.0" size="23" styleClass="login-settings-back-btn" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="2.0" />
+                  <Label fx:id="signInBtn" graphicTextGap="2.0" layoutX="14.0" layoutY="7.0" styleClass="login-settings-label" text="Sign In" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="6.0">
+                     <graphic>
+                        <MaterialIconView glyphName="ARROW_BACK" size="16" styleClass="login-settings-label-ic" />
+                     </graphic>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" layoutY="16.0" prefHeight="45.0" prefWidth="400.0" styleClass="login-settings-big-label" text="Database Settings" AnchorPane.leftAnchor="0.0" />
+            <ImageView fx:id="settingsImageView" fitHeight="250.0" fitWidth="250.0" layoutX="94.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="130.0">
+               <image>
+                  <Image url="@../assets/slide/5.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

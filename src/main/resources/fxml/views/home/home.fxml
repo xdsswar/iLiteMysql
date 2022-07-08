@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.xd.chart.DonutChart?>
+<?import com.xd.controls.XButton?>
+<?import com.xd.controls.XListView?>
+<?import com.xd.ss.war.awesome.FontAwesomeIconView?>
+<?import com.xd.ss.war.materialicon.MaterialIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1099.0" prefWidth="974.0" stylesheets="@../../../main.css" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1">
+    <content>
+        <AnchorPane fx:id="pane" minHeight="0.0" minWidth="0.0" prefHeight="1097.0" prefWidth="973.0">
+            <children>
+                <HBox minHeight="-Infinity" minWidth="-Infinity" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <VBox minHeight="-Infinity" minWidth="-Infinity" prefWidth="760.0" styleClass="vbox-panel" HBox.hgrow="ALWAYS">
+                            <children>
+                        <AnchorPane prefHeight="60.0" prefWidth="951.0">
+                           <children>
+                              <VBox alignment="CENTER_LEFT" prefHeight="51.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label styleClass="dash-view-label" text="Dashboard">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <XButton fx:id="newOrderBtn" graphicTextGap="6.0" prefHeight="32.0" prefWidth="125.0" styleClass="new-order-button" text="Add Order" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="14.0">
+                                 <graphic>
+                                    <MaterialIconView glyphName="SHOPPING_CART" size="16" styleClass="new-order-button-ic" />
+                                 </graphic>
+                                 <tooltip>
+                                    <Tooltip styleClass="new-order-tooltip" text="Create new Order" />
+                                 </tooltip>
+                              </XButton>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="120.0" prefWidth="951.0" style="-fx-background-color: transparent;">
+                           <children>
+                              <HBox alignment="CENTER" minHeight="-Infinity" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane minHeight="-Infinity" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: transparent;">
+                                       <children>
+                                          <AnchorPane layoutX="-14.0" layoutY="-9.0" prefHeight="200.0" prefWidth="200.0" styleClass="info-box-1" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+                                             <children>
+                                                <AnchorPane layoutX="26.0" layoutY="26.0" prefHeight="70.0" prefWidth="5.0" styleClass="info-box-1-side" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <VBox alignment="CENTER" layoutX="129.0" layoutY="8.0" prefHeight="93.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <FontAwesomeIconView glyphName="CALENDAR_CHECK_ALT" size="30" styleClass="info-box-icons">
+                                                         <VBox.margin>
+                                                            <Insets right="10.0" />
+                                                         </VBox.margin></FontAwesomeIconView>
+                                                   </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER_LEFT" layoutX="9.0" layoutY="4.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <Label fx:id="title1" styleClass="info-box-1-title" text="EARNINGS (MONTHLY)">
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" left="10.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label fx:id="label1" styleClass="info-box-labels" text="\$0.00">
+                                                         <VBox.margin>
+                                                            <Insets bottom="20.0" left="10.0" />
+                                                         </VBox.margin></Label>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </AnchorPane>
+                                    <AnchorPane minHeight="-Infinity" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: transparent;">
+                                       <children>
+                                          <AnchorPane layoutX="-14.0" layoutY="-9.0" prefHeight="200.0" prefWidth="200.0" styleClass="info-box-2" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+                                             <children>
+                                                <AnchorPane prefHeight="70.0" prefWidth="5.0" styleClass="info-box-2-side" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <VBox alignment="CENTER" prefHeight="93.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <FontAwesomeIconView glyphName="DOLLAR" size="30" styleClass="info-box-icons">
+                                                         <VBox.margin>
+                                                            <Insets right="10.0" />
+                                                         </VBox.margin></FontAwesomeIconView>
+                                                   </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER_LEFT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <Label fx:id="title2" styleClass="info-box-2-title" text="EARNINGS (ANNUAL)">
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" left="10.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label fx:id="label2" styleClass="info-box-labels" text="\$0.00">
+                                                         <VBox.margin>
+                                                            <Insets bottom="20.0" left="10.0" />
+                                                         </VBox.margin></Label>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane minHeight="-Infinity" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: transparent;">
+                                       <children>
+                                          <AnchorPane layoutX="-14.0" layoutY="-9.0" prefHeight="200.0" prefWidth="200.0" styleClass="info-box-3" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+                                             <children>
+                                                <AnchorPane prefHeight="70.0" prefWidth="5.0" styleClass="info-box-3-side" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <VBox alignment="CENTER" prefHeight="93.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <FontAwesomeIconView glyphName="DROPBOX" size="30" styleClass="info-box-icons">
+                                                         <VBox.margin>
+                                                            <Insets right="10.0" />
+                                                         </VBox.margin></FontAwesomeIconView>
+                                                   </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER_LEFT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <Label fx:id="title3" styleClass="info-box-3-title" text="ORDERS (MONTHLY)">
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" left="10.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label fx:id="label3" styleClass="info-box-labels" text="0">
+                                                         <VBox.margin>
+                                                            <Insets bottom="20.0" left="10.0" />
+                                                         </VBox.margin></Label>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane minHeight="-Infinity" prefHeight="140.0" prefWidth="500.0" style="-fx-background-color: transparent;">
+                                       <children>
+                                          <AnchorPane layoutX="-14.0" layoutY="-9.0" prefHeight="200.0" prefWidth="200.0" styleClass="info-box-4" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+                                             <children>
+                                                <AnchorPane prefHeight="70.0" prefWidth="5.0" styleClass="info-box-4-side" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <VBox alignment="CENTER" prefHeight="93.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <MaterialIconView glyphName="PERSON_ADD" size="30" styleClass="info-box-icons">
+                                                         <VBox.margin>
+                                                            <Insets right="10.0" />
+                                                         </VBox.margin></MaterialIconView>
+                                                   </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER_LEFT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <Label fx:id="title4" styleClass="info-box-4-title" text="CLIENTS">
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" left="10.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label fx:id="label4" styleClass="info-box-labels" text="0">
+                                                         <VBox.margin>
+                                                            <Insets bottom="20.0" left="10.0" />
+                                                         </VBox.margin></Label>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefWidth="950.0">
+                           <children>
+                              <AnchorPane layoutX="23.0" layoutY="23.0" prefWidth="449.0" styleClass="info-box-1" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                 <children>
+                                    <BarChart fx:id="barChart" layoutX="1.0" layoutY="41.0" minHeight="-Infinity" prefWidth="250.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="41.0">
+                                      <xAxis>
+                                        <CategoryAxis fx:id="catAxis" side="BOTTOM" />
+                                      </xAxis>
+                                      <yAxis>
+                                        <NumberAxis fx:id="numAxis" side="LEFT" />
+                                      </yAxis>
+                                    </BarChart>
+                                    <VBox alignment="CENTER_LEFT" layoutX="53.0" layoutY="5.0" prefHeight="40.0" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Label fx:id="earningOverviewLabel" styleClass="home-chart-label-title" text="Earnings Overview">
+                                             <VBox.margin>
+                                                <Insets left="20.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER_RIGHT" layoutX="761.0" layoutY="2.0" prefHeight="40.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+                                       <children>
+                                          <XButton fx:id="chartMenu" contentDisplay="RIGHT" styleClass="dash-header-user-btn">
+                                             <contextMenu>
+                                                <ContextMenu fx:id="chartContextMenu" minWidth="120.0" styleClass="chart-custom-context" />
+                                             </contextMenu>
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="ELLIPSIS_V" size="18" styleClass="hone-dots-icons" />
+                                             </graphic>
+                                             <VBox.margin>
+                                                <Insets right="20.0" />
+                                             </VBox.margin>
+                                          </XButton>
+                                       </children>
+                                    </VBox>
+                                    <AnchorPane prefHeight="70.0" prefWidth="2.0" styleClass="info-box-1-side" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <HBox alignment="CENTER" minHeight="-Infinity" prefWidth="500.0" style="-fx-background-color: transparent;">
+                           <children>
+                              <AnchorPane prefWidth="1200.0" style="-fx-background-color: transparent;">
+                                 <children>
+                                    <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="200.0" prefWidth="200.0" styleClass="info-box-1" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+                                       <children>
+                                          <VBox alignment="CENTER_LEFT" layoutX="9.0" layoutY="4.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <AnchorPane minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+                                                   <children>
+                                                      <VBox alignment="CENTER_LEFT" prefHeight="40.0" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="0.0">
+                                                         <children>
+                                                            <Label styleClass="home-chart-label-title" text="Orders by Employee">
+                                                               <VBox.margin>
+                                                                  <Insets left="20.0" />
+                                                               </VBox.margin>
+                                                            </Label>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </AnchorPane>
+                                                <DonutChart fx:id="donutChart" minHeight="-Infinity" prefHeight="360.0" prefWidth="450.0" />
+                                             </children>
+                                          </VBox>
+                                          <AnchorPane prefHeight="70.0" prefWidth="2.0" styleClass="info-box-1-side" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                              <AnchorPane prefWidth="1200.0" style="-fx-background-color: transparent;">
+                                 <children>
+                                    <AnchorPane layoutX="-14.0" layoutY="-9.0" prefHeight="200.0" prefWidth="200.0" styleClass="info-box-4" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+                                       <children>
+                                          <AnchorPane prefHeight="70.0" prefWidth="2.0" styleClass="info-box-1-side" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                          <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <AnchorPane minHeight="40.0" prefHeight="40.0" prefWidth="200.0" styleClass="list-bottom-border">
+                                                   <children>
+                                                      <VBox alignment="CENTER_LEFT" prefHeight="40.0" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="0.0">
+                                                         <children>
+                                                            <Label styleClass="home-chart-label-title" text="Recent Orders">
+                                                               <VBox.margin>
+                                                                  <Insets left="20.0" />
+                                                               </VBox.margin>
+                                                            </Label>
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER_RIGHT" prefHeight="40.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+                                                         <children>
+                                                            <XButton fx:id="refreshListBtn" contentDisplay="RIGHT" styleClass="dash-header-user-btn">
+                                                               <graphic>
+                                                                  <FontAwesomeIconView glyphName="REFRESH" size="18" styleClass="hone-dots-icons" />
+                                                               </graphic>
+                                                               <VBox.margin>
+                                                                  <Insets right="20.0" />
+                                                               </VBox.margin>
+                                                            </XButton>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </AnchorPane>
+                                                <XListView fx:id="listView" styleClass="list-view-last">
+                                                   <placeholder>
+                                                      <VBox alignment="CENTER">
+                                                         <children>
+                                                            <ImageView fitHeight="28.0" fitWidth="328.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../assets/loaders/loader.gif" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </children>
+                                                      </VBox>
+                                                   </placeholder>
+                                                   <VBox.margin>
+                                                      <Insets top="10.0" />
+                                                   </VBox.margin>
+                                                </XListView>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="20.0" top="10.0" />
+                                 </HBox.margin>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                            </children>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </AnchorPane>
+    </content>
+</ScrollPane>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.xd.controls.XButton?>
+<?import com.xd.ss.war.awesome.FontAwesomeIconView?>
+<?import com.xd.ss.war.materialicon.MaterialIconView?>
+<?import com.xd.text.MaskedTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="1100.0" stylesheets="@../../../main.css" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane prefWidth="951.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <AnchorPane minHeight="-Infinity" prefHeight="60.0" prefWidth="951.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="51.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <Label styleClass="dash-view-label" text="Providers">
+                                    <VBox.margin>
+                                        <Insets left="20.0" />
+                                    </VBox.margin>
+                                </Label>
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="23.0" layoutY="23.0" prefWidth="449.0" styleClass="info-box-1" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0">
+                    <children>
+                        <AnchorPane prefHeight="70.0" prefWidth="2.0" styleClass="info-box-1-side" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane minWidth="300.0" prefHeight="250.0" prefWidth="250.0" style="-fx-background-color: #ffffff;">
+                           <children>
+                              <ListView fx:id="listView" layoutY="240.0" minWidth="250.0" prefHeight="255.0" prefWidth="250.0" styleClass="unit-list-cell" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="41.0">
+                                  <placeholder>
+                                      <VBox alignment="CENTER">
+                                          <children>
+                                              <ImageView fitHeight="28.0" fitWidth="328.0" pickOnBounds="true" preserveRatio="true">
+                                                  <image>
+                                                      <Image url="@../../../assets/loaders/loader.gif" />
+                                                  </image>
+                                              </ImageView>
+                                          </children>
+                                      </VBox>
+                                  </placeholder>
+                              </ListView>
+                              <AnchorPane layoutX="25.0" layoutY="26.0" maxHeight="40.0" prefHeight="40.0" prefWidth="250.0" styleClass="list-bottom-border" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <VBox alignment="CENTER_LEFT" layoutX="-16.0" layoutY="-80.0" prefHeight="36.0" prefWidth="158.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Label styleClass="unit-section-header-label" text="Available Providers">
+                                             <VBox.margin>
+                                                <Insets left="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="142.0" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <XButton fx:id="newBtn" prefHeight="25.0" prefWidth="65.0" styleClass="unit-list-btn" text="New">
+                                             <VBox.margin>
+                                                <Insets right="5.0" />
+                                             </VBox.margin>
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="PLUS" size="14" styleClass="hone-dots-icons" />
+                                             </graphic>
+                                             <HBox.margin>
+                                                <Insets right="5.0" />
+                                             </HBox.margin>
+                                          </XButton>
+                                          <XButton fx:id="refreshBtn" contentDisplay="CENTER" graphicTextGap="0.0" prefWidth="40.0" styleClass="unit-list-btn" text=" ">
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="REFRESH" size="14" styleClass="hone-dots-icons" />
+                                             </graphic>
+                                             <HBox.margin>
+                                                <Insets right="5.0" />
+                                             </HBox.margin>
+                                          </XButton>
+                                       </children>
+                                    </HBox>
+                                 </children></AnchorPane>
+                           </children>
+                        </AnchorPane>
+
+                        <AnchorPane prefHeight="495.0" prefWidth="4000.0" style="-fx-background-color: #DFE5E9;">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <children>
+                              <AnchorPane layoutX="222.0" layoutY="126.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane prefHeight="70.0" prefWidth="2.0" styleClass="info-box-1-side" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutX="204.0" layoutY="148.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="484.0" prefWidth="731.0">
+                                             <children>
+                                                <GridPane alignment="CENTER_LEFT" layoutX="219.0" layoutY="201.0" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="80.0">
+                                                  <columnConstraints>
+                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                  </columnConstraints>
+                                                  <rowConstraints>
+                                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                                  </rowConstraints>
+                                                   <children>
+                                                      <Label styleClass="unit-labels" text="Provider name" />
+                                                      <TextField fx:id="nameText" disable="true" minHeight="30.0" styleClass="unit-text-input" GridPane.rowIndex="1" />
+                                                      <Label styleClass="unit-labels" text="Phone Number" GridPane.rowIndex="4" />
+                                                      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="8">
+                                                         <children>
+                                                            <XButton fx:id="applyButton" disable="true" graphicTextGap="8.0" prefHeight="32.0" prefWidth="110.0" styleClass="new-order-button" text="Apply">
+                                                               <HBox.margin>
+                                                                  <Insets top="15.0" />
+                                                               </HBox.margin>
+                                                               <graphic>
+                                                                  <MaterialIconView glyphName="CHECK" size="18" styleClass="new-order-button-ic" />
+                                                               </graphic></XButton>
+                                                         </children>
+                                                      </HBox>
+                                                      <Label styleClass="unit-labels" text="Email Address" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="emailText" disable="true" minHeight="30.0" styleClass="unit-text-input" GridPane.rowIndex="3" />
+                                                      <MaskedTextField fx:id="phoneText" disable="true" mask="DDD-DDD-DDDD" minHeight="30.0" styleClass="unit-text-input" GridPane.rowIndex="5" />
+                                                      <Label styleClass="unit-labels" text="Provider Address" GridPane.rowIndex="6" />
+                                                      <TextField fx:id="addressText" disable="true" minHeight="30.0" styleClass="unit-text-input" GridPane.rowIndex="7" />
+                                                   </children>
+                                                </GridPane>
+                                                <AnchorPane prefHeight="40.0" prefWidth="250.0" styleClass="list-bottom-border" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <VBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="4.0" prefHeight="38.0" prefWidth="317.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                         <children>
+                                                            <Label styleClass="unit-section-header-label" text="Create or Edit Provider">
+                                                               <VBox.margin>
+                                                                  <Insets left="5.0" />
+                                                               </VBox.margin>
+                                                            </Label>
+                                                         </children>
+                                                      </VBox>
+                                                   </children></AnchorPane>
+                                             </children></AnchorPane>
+                                      </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </children></AnchorPane>
+                     </children>
+                  </HBox>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

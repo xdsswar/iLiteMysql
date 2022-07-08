@@ -1,0 +1,315 @@
+.unit-list-cell{
+    -fx-background-color: #ffffff;
+}
+
+
+.unit-list-cell .scroll-bar:horizontal:hover .track ,
+.unit-list-cell .scroll-bar:horizontal:pressed .track ,
+.unit-list-cell .scroll-bar:vertical:hover .track,
+.unit-list-cell .scroll-bar:vertical:pressed .track{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0em;
+    -fx-cursor: hand;
+}
+/* The main scrollbar **thumb** CSS class on event of "hover" and "pressed" */
+.unit-list-cell .scroll-bar .thumb:hover,
+.unit-list-cell .scroll-bar .thumb:pressed{
+    -fx-background-color: transparent;
+}
+
+.scroll-bar.increment-button:hover ,.decrement-button:hover {
+    -fx-background-color:#34495e;
+    -fx-border-color:#34495e;
+    -fx-padding:10px;
+}
+
+/*
+Override for curve
+ */
+/* The main scrollbar **track** CSS class  */
+.unit-list-cell .scroll-bar:horizontal .track,
+.unit-list-cell .scroll-bar:vertical .track{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius:0em;
+}
+
+/* The increment and decrement button CSS class of scrollbar */
+.unit-list-cell .scroll-bar:horizontal .increment-button ,
+.unit-list-cell .scroll-bar:horizontal .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 0 0;/* -fx-padding:0 0 10 0;*/
+
+}
+/* The increment and decrement button CSS class of scrollbar */
+
+.unit-list-cell .scroll-bar:vertical .increment-button ,
+.unit-list-cell .scroll-bar:vertical .decrement-button {
+
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 10 0 0;
+
+}
+
+.unit-list-cell .scroll-bar .increment-arrow,
+.unit-list-cell .scroll-bar .decrement-arrow
+{
+    -fx-shape: " ";
+    -fx-padding:0;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.unit-list-cell .scroll-bar:horizontal .thumb,
+.unit-list-cell .scroll-bar:vertical .thumb {
+    /*-fx-background-color:#2c3e50;*/
+    -fx-background-color:#95a5a6;
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+.unit-list-cell .scroll-bar:horizontal .thumb:hover,
+.unit-list-cell .scroll-bar:vertical .thumb:hover {
+    -fx-cursor: hand;
+}
+.unit-list-cell-icon{
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+}
+
+.unit-list-cell .list-cell:selected , .unit-list-cell .list-cell:filled:selected:hover{
+    -fx-background-color: #3498db;
+}
+
+.unit-list-cell .list-cell:hover{
+    -fx-background-color: transparent;
+}
+
+.cell-n-label{
+    -fx-font-family: 'Roboto Regular';
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+.cell-d-label{
+    -fx-font-family: 'Roboto Regular';
+    -fx-font-weight: normal;
+    -fx-font-size: 13px;
+}
+
+
+.unit-list-cell-empty .list-cell:selected, .unit-list-cell-empty:filled:selected:hover{
+    -fx-background-color: transparent;
+}
+
+
+.unit-list-cell-empty .list-cell:hover{
+    -fx-background-color: transparent;
+}
+
+.unit-list-cell .list-cell:filled{
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+
+.unit-list-cell .list-cell:filled:hover{
+    -fx-background-color: transparent;
+}
+
+.unit-list-cell .list-cell:filled:hover .label{
+    -fx-text-fill: #2c3e50;
+}
+
+
+
+.unit-list-cell .list-cell:filled:selected{
+    -fx-background-color: #0084ff;
+}
+
+.unit-list-cell .list-cell:filled:selected .label{
+    -fx-text-fill: #ecf0f1;
+}
+
+.unit-list-cell .list-cell:filled:selected:hover{
+    -fx-background-color: #0084ff;
+}
+
+.unit-list-cell .list-cell:filled:selected:hover .label{
+    -fx-text-fill: #ecf0f1;
+}
+
+.unit-labels{
+    -fx-text-fill: #2c3e50;
+    -fx-font-family: 'Roboto Regular';
+    -fx-font-size: 14px;
+}
+
+.unit-text-input{
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #6e707e;
+    -fx-font-family: 'Roboto Regular';
+    -fx-font-size: 13px;
+    -fx-border-color: #e4e4ee;
+}
+
+.unit-text-area{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #6e707e;
+    -fx-font-family: 'Roboto Regular';
+    -fx-font-size: 13px;
+    -fx-border-color: #e4e4ee;
+}
+
+.unit-apply-button{
+    -fx-background-color:#bdc3c7;
+    -fx-cursor: hand;
+    -fx-font-size: 14px;
+    -fx-text-fill: #34495e;
+    -fx-font-family: 'Lato Regular';
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.unit-input-error{
+    -fx-border-color: #ff004e;
+}
+
+.unit-section-header-label{
+    -fx-text-fill: #4e73df;
+    -fx-font-family: 'Roboto Regular';
+    -fx-font-size: 15px;
+}
+
+.unit-list-btn{
+    -fx-text-fill: #4e73df;
+    -fx-font-family: 'Roboto Regular';
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.is-active{
+    -fx-fill: #2ecc71;
+}
+
+.prd-text-input{
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #6e707e;
+    -fx-font-family: 'Roboto Regular';
+    -fx-font-size: 13px;
+    -fx-border-color: #e4e4ee;
+}
+
+.prd-base{
+    -fx-border-color: #bdc3c7;
+ }
+.prd-header{
+    -fx-background-color: #0e4f65;
+}
+
+.prd-icon{
+    -fx-fill: #ecf0f1;
+}
+
+.prd-title{
+    -fx-text-fill: #ecf0f1;
+    -fx-font-family: 'Roboto Regular';
+    -fx-font-size: 15px;
+}
+.prd-close{
+    -fx-fill: #ecf0f1;
+    -fx-cursor: hand;
+}
+.prd-close:hover{
+    -fx-fill: #c0392b;
+}
+
+.prd-save-button{
+    -fx-background-color:#F07444;
+    -fx-cursor: hand;
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: 'Lato Regular';
+    -fx-border-color: #F07444;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+.prd-save-button:hover, .prd-save-button:armed {
+    -fx-background-color: #e9612e;
+}
+
+.new-order-button{
+    -fx-background-color:#5bb75b;
+    -fx-cursor: hand;
+    -fx-font-size: 14px;
+    -fx-text-fill: #ecf0f1;
+    -fx-font-family: 'Lato Regular';
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+.new-order-button:hover, .new-order-button:armed{
+    -fx-background-color: #5cc35c;
+}
+
+.orders-order-button{
+    -fx-background-color:#F07444;
+    -fx-cursor: hand;
+    -fx-font-size: 14px;
+    -fx-text-fill: #ecf0f1;
+    -fx-font-family: 'Lato Regular';
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.orders-order-button:hover,.orders-order-button:armed{
+    -fx-background-color: #e9612e;
+}
+
+.new-order-button-ic{
+    -fx-fill: #ecf0f1;
+}
+.new-order-tooltip{
+    -fx-font-size: 13px;
+    -fx-font-family: 'Roboto Regular';
+    -fx-text-fill: #5a5c69;
+    -fx-background-color: #f3f4f7;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-border-color: #e3e6f0;
+}
+
+
+/**
+ ===============Styles for staff===================================================
+ */
+
+.staff-image-button{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-border-radius: 100;
+    -fx-background-radius: 100;
+    -fx-border-color: #66666b;
+    -fx-border-width: 1;
+}
+
+.staff-image-button-ic{
+    -fx-fill: transparent;
+}
+
+.staff-image-button:hover .staff-image-button-ic{
+    -fx-fill: #66666b;
+}
+
+.inactive-e{
+    -fx-fill: #b92b27;
+}
+
+.staff-select-image-label{
+    -fx-font-size: 16px;
+    -fx-font-family: 'Roboto Regular';
+}
+

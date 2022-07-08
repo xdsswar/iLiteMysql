@@ -1,0 +1,233 @@
+
+/**
+Tables cell Style
+ */
+.paid-cell{
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #00d25b;
+    -fx-font-family: 'Roboto Medium';
+    -fx-font-weight: bold;
+    -fx-background-color: #00d25b;
+    -fx-border-radius:  5;
+    -fx-background-radius: 5;
+    -fx-border-width: 1;
+    -fx-padding: 6 20 6 20;
+}
+.unpaid-cell{
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #fc424a;
+    -fx-font-family: 'Roboto Medium';
+    -fx-font-size: 12px;
+    -fx-background-color: #fc424a;
+    -fx-border-radius:  5;
+    -fx-background-radius: 5;
+    -fx-border-width: 1;
+    -fx-padding: 6 20 6 20;
+}
+.pending-cell{
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #ffab00;
+    -fx-font-family: 'Roboto Medium';
+    -fx-font-size: 12px;
+    -fx-background-color: #ffab00;
+    -fx-border-radius:  5;
+    -fx-background-radius: 5;
+    -fx-border-width: 1;
+    -fx-padding: 6 20 6 20;
+}
+
+.void-cell{
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #8f5fe8;
+    -fx-font-family: 'Roboto Medium';
+    -fx-font-size: 12px;
+    -fx-background-color: #8f5fe8;
+    -fx-border-radius:  5;
+    -fx-background-radius: 5;
+    -fx-border-width: 1;
+    -fx-padding: 6 20 6 20;
+}
+
+.label-ic-status{
+    -fx-fill: #ffffff;
+}
+
+/*
+Column rows style for EmployeeStatus
+ */
+.paid-row{
+    -fx-background-color: rgba(0, 178, 148, 0.53);
+    -fx-font-family: 'Roboto Medium';
+    -fx-font-size: 13px;
+    -fx-border-width: 0 3 0 3;
+    -fx-border-color: #10893E;
+}
+.void-row{
+    -fx-background-color:#dedede ;
+    -fx-font-family: 'Roboto Medium';
+    -fx-font-size: 13px;
+    -fx-border-width: 0 3 0 3;
+    -fx-border-color: #7f8c8d;
+}
+.unpaid-row{
+    -fx-background-color: rgba(237, 111, 86, 0.45);
+    -fx-font-family: 'Roboto Medium';
+    -fx-font-size: 13px;
+    -fx-border-width: 0 3 0 3;
+    -fx-border-color: rgba(237, 111, 86, 0.9);
+}
+.pending-row{
+    -fx-background-color: rgba(240, 173, 78, 0.49);
+    -fx-font-family: 'Roboto Medium';
+    -fx-font-size: 13px;
+    -fx-border-width: 0 3 0 3;
+    -fx-border-color: rgba(240, 173, 78, 0.9);
+}
+/*
+End Column rows style for EmployeeStatus
+ */
+
+/**
+Custom Column with border
+ */
+.paid-cell-border{
+    -fx-text-fill: #00d25b;
+    -fx-border-color: #00d25b;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Roboto Medium';
+    -fx-background-color: transparent;
+    -fx-border-radius:  5;
+    -fx-background-radius: 5;
+    -fx-border-width: 1;
+    -fx-padding: 6 20 6 20;
+}
+.unpaid-cell-border{
+    -fx-text-fill: #fc424a;
+    -fx-border-color: #fc424a;
+    -fx-font-family: 'Roboto Medium';
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-background-color: transparent;
+    -fx-border-radius:  5;
+    -fx-background-radius: 5;
+    -fx-border-width: 1;
+    -fx-padding: 6 20 6 20;
+}
+.pending-cell-border{
+    -fx-text-fill: #ffab00;
+    -fx-border-color: #ffab00;
+    -fx-font-family: 'Roboto Medium';
+    -fx-font-size: 13px;
+    -fx-background-color: transparent;
+    -fx-border-radius:  5;
+    -fx-background-radius: 5;
+    -fx-border-width: 1;
+    -fx-padding: 6 20 6 20;
+}
+
+.void-cell-border{
+    -fx-text-fill: #8f5fe8;
+    -fx-border-color: #8f5fe8;
+    -fx-font-family: 'Roboto Medium';
+    -fx-font-size: 13px;
+    -fx-background-color: transparent;
+    -fx-border-radius:  5;
+    -fx-background-radius: 5;
+    -fx-border-width: 1;
+    -fx-padding: 6 20 6 20;
+}
+
+.green-ic {
+    -fx-fill: #00d25b;
+}
+.red-ic {
+    -fx-fill: #fc424a;
+}
+.orange-ic {
+    -fx-fill: #ffab00;
+}
+.violet-ic {
+    -fx-fill: #8f5fe8;
+}
+
+/**
+End Custom column with border
+ */
+
+/*
+Custom cell for Last orders
+ */
+
+.cell-icon-container-paid{
+    -fx-background-color: #00d25b;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+.cell-icon-container-unpaid{
+    -fx-background-color: #fc424a;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+.cell-icon-container-void{
+    -fx-background-color: #8f5fe8;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+.cell-icon-container-pending{
+    -fx-background-color: #ffab00;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+
+.cell-title-label{
+    -fx-font-family: 'Roboto Regular';
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+.cell-desc-label{
+    -fx-font-family: 'Roboto Regular';
+    -fx-font-weight: normal;
+    -fx-font-size: 13px;
+}
+
+.cell-date-label{
+    -fx-font-family: 'Roboto Regular';
+    -fx-font-weight: normal;
+    -fx-font-size: 14px;
+}
+
+.list-view-last{
+}
+
+.list-view-last .list-cell:selected , .list-view-last .list-cell:filled:selected:hover{
+    -fx-background-color: #1fa3c2;
+}
+
+.list-view-last .list-cell:hover{
+    -fx-background-color: rgba(43, 230, 228, 0.8);
+}
+.list-view-last .list-cell:focused{
+
+}
+
+
+/*
+Styles for Balances
+ */
+
+.paid-cell-balance{
+    -fx-text-fill:#00d25b;
+}
+.unpaid-cell-balance{
+    -fx-text-fill: #fc424a;
+}
+.pending-cell-balance{
+    -fx-text-fill: #ffab00;
+}
+.void-cell-balance{
+    -fx-text-fill: #8f5fe8;
+}
+
+
+

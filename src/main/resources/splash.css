@@ -1,0 +1,60 @@
+/*
+SPLASH SECTION
+ */
+.splash-base{
+    -fx-background-image: url("assets/splash-bg.jpg");
+    /*-fx-background-size: cover;*/
+    -fx-background-repeat: no-repeat;
+}
+
+.splash-header{
+    -fx-background-color: transparent;
+}
+.splash-header:hover{
+    -fx-cursor: hand;
+}
+.big-label{
+    -fx-font-size: 60px;
+    -fx-text-fill: #f8f9fc;
+    -fx-font-family: 'Lovelo Line Bold';
+}
+.desc-label{
+    -fx-font-size: 13px;
+    -fx-text-fill: #f8f9fc;
+    -fx-font-family: 'Open Sans SemiBold';
+}
+.coy-label{
+    -fx-font-size: 12px;
+    -fx-text-fill: #f8f9fc;
+    -fx-font-family: 'Open Sans SemiBold';
+}
+.splash-progress-label{
+    -fx-font-size: 12px;
+    -fx-text-fill: #f8f9fc;
+    -fx-font-family: 'Open Sans SemiBold';
+}
+
+/*
+Progress bar
+ */
+
+.splash-progress-bar > .bar {
+    -fx-background-color: #00d25b;
+    -fx-background-insets: 1 1 2 1;
+    -fx-padding: 1px;
+    -fx-background-radius: 0;
+}
+
+.splash-progress-bar > .track {
+    -fx-background-color: transparent;
+    -fx-background-insets: 3 3 4 3;
+    -fx-background-radius: 0;
+    -fx-pref-height: 1px;
+    -fx-min-height: 1px;
+    -fx-max-height: 1px;
+}
+
+
+/*
+END SPLASH SECTION
+ */

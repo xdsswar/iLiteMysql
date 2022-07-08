@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="316.0" minWidth="566.0" prefHeight="316.0" prefWidth="566.0" styleClass="splash-base" stylesheets="@../splash.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inv.ui.ctrl.Splash">
+   <children>
+      <Label fx:id="softName" layoutX="106.0" layoutY="40.0" styleClass="big-label" text="ILite" AnchorPane.leftAnchor="106.0" />
+      <AnchorPane fx:id="header" layoutX="240.0" layoutY="43.0" prefHeight="40.0" prefWidth="600.0" styleClass="splash-header" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label fx:id="softDescription" layoutX="111.0" layoutY="107.0" styleClass="desc-label" text="Write a Description here" wrapText="true" AnchorPane.leftAnchor="111.0" />
+      <Label fx:id="copyText" layoutX="10.0" layoutY="289.0" styleClass="coy-label" text="© Copyright here. All rights reserved." AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" />
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="55.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="progressLabel" layoutX="558.0" layoutY="330.0" styleClass="splash-progress-label" text="Progress " AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="10.0" />
+      <ProgressBar fx:id="progressBar" layoutX="7.0" layoutY="341.0" prefHeight="7.0" prefWidth="205.0" progress="0.0" styleClass="splash-progress-bar" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>

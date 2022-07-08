@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.xd.controls.XButton?>
+<?import com.xd.ss.war.awesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="775.0" prefWidth="347.0" stylesheets="@../../../../main.css" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane minWidth="300.0" prefHeight="250.0" prefWidth="250.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ListView fx:id="productsListView" layoutY="240.0" minWidth="250.0" prefHeight="255.0" prefWidth="250.0" styleClass="unit-list-cell" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="81.0">
+                    <placeholder>
+                        <VBox alignment="CENTER">
+                            <children>
+                                <ImageView fitHeight="28.0" fitWidth="328.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../assets/loaders/loader.gif" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                    </placeholder>
+                </ListView>
+                <AnchorPane layoutX="25.0" layoutY="26.0" maxHeight="40.0" prefHeight="40.0" prefWidth="250.0" styleClass="list-bottom-border" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <VBox alignment="CENTER_LEFT" layoutX="-16.0" layoutY="-80.0" prefHeight="37.0" prefWidth="135.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <Label styleClass="unit-section-header-label" text="Available Products">
+                                    <VBox.margin>
+                                        <Insets left="5.0" />
+                                    </VBox.margin>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="142.0" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <XButton fx:id="newProductBtn" opacity="0.0" prefHeight="25.0" prefWidth="65.0" styleClass="unit-list-btn" text="New">
+                                    <VBox.margin>
+                                        <Insets right="5.0" />
+                                    </VBox.margin>
+                                    <graphic>
+                                        <FontAwesomeIconView glyphName="PLUS" size="14" styleClass="hone-dots-icons" />
+                                    </graphic>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </XButton>
+                                <XButton fx:id="refreshProductBtn" contentDisplay="CENTER" graphicTextGap="0.0" prefWidth="40.0" styleClass="unit-list-btn" text=" ">
+                                    <graphic>
+                                        <FontAwesomeIconView glyphName="REFRESH" size="14" styleClass="hone-dots-icons" />
+                                    </graphic>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </XButton>
+                            </children>
+                        </HBox>
+                    </children>
+                </AnchorPane>
+                <VBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="41.0">
+                    <children>
+                        <AnchorPane prefHeight="40.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="productSearch" prefHeight="30.0" prefWidth="235.0" promptText="Search Product" styleClass="dash-header-search-text" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+                                <FontAwesomeIconView glyphName="SEARCH" size="15" styleClass="hone-dots-icons" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="12.0" />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

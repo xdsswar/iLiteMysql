@@ -1,0 +1,168 @@
+/*
+LOGIN SECTION  #e5eff1
+*/
+.l-base{
+    -fx-background-color:#e5eff1;
+}
+
+.l-header{
+
+}
+.login-title-label{
+    -fx-font-family: 'Lato Regular';
+    -fx-text-fill: #605977;
+    -fx-font-size: 1.2em;
+}
+.login-big-label{
+    -fx-font-family: 'Pacifico Regular';
+    -fx-text-fill: #605977;
+    -fx-font-size: 50px;
+}
+.login-small-label{
+    -fx-font-family: 'Pacifico Regular';
+    -fx-text-fill: #605977;
+    -fx-font-size: 22px;
+}
+.login-settings-label{
+    -fx-font-family: 'Lato Regular';
+    -fx-text-fill: #9CAAAC;
+    -fx-font-size: 1.2em;
+    -fx-cursor: hand;
+}
+.login-settings-label:hover{
+    -fx-text-fill: #1FC1F4;
+}
+
+
+.login-settings-label-ic{
+    -fx-fill:#9CAAAC ;
+    -fx-cursor: hand;
+}
+
+.login-settings-label:hover .login-settings-label-ic{
+    -fx-fill:#1FC1F4;
+}
+
+.login-close-btn{
+    -fx-cursor: hand;
+    /*-fx-fill: #ecf0f1;*/
+    -fx-fill: #2c3e50;
+}
+.login-close-btn:hover{
+    -fx-fill: linear-gradient(to right top, #f1010b, #ff004e, #ff0088, #ff3cc1, #f469f4);
+
+}
+
+
+.login-input {
+    -fx-font-family: 'Lato Regular';
+    -fx-border-color: #BCBCBC;
+    -fx-border-width: 1 1 1 1; /*top, right, bottom, left*/
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+    -fx-font-size: 13px;
+    -fx-text-fill: #01B0F1;
+}
+
+.login-input:focused,.login-input:armed, .login-input:selected{
+    -fx-border-color: linear-gradient(to right top, #01b0f1, #00c3f3, #00d5ee, #29e5e4, #69f4d7);
+}
+.login-btn{
+    -fx-background-color:linear-gradient(to right, #01b0f1, #00c4f3, #00d6ee, #2be6e4, #6af5d8);
+    -fx-cursor: hand;
+    -fx-font-size: 14px;
+    -fx-text-fill: #ecf0f1;
+    -fx-font-family: 'Lato Regular';
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.login-left-box{
+
+}
+.login-right-box{
+    -fx-background-color: linear-gradient(to right top, #01b0f1, #00c3f3, #00d5ee, #29e5e4, #69f4d7);
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 300 300;
+    -fx-background-position: center;
+}
+.login-input-ic{
+    -fx-fill: #01B0F1
+}
+
+.login-error-label{
+    -fx-font-family: 'Lato Regular';
+    -fx-text-fill: #ff004e;
+    -fx-font-size: 13px;
+}
+
+.login-done-label{
+    -fx-font-family: 'Lato Regular';
+    -fx-text-fill: #69f4d7;
+    -fx-font-size: 13px;
+}
+
+.login-input-error{
+    -fx-border-color: #ff004e;
+}
+
+.login-bottom-label{
+    -fx-font-family:'Rubik Regular' ;
+    -fx-font-size: 13px;
+    -fx-text-fill: #f8f9fc;
+}
+.login-bottom-hipper{
+    -fx-font-family:'Rubik Regular' ;
+    -fx-font-size: 13px;
+    -fx-text-fill: #f8f9fc;
+}
+.login-bottom-ic{
+    -fx-fill: #881798;
+}
+.login-bottom-hipper:hover{
+    -fx-text-fill: #C30052;
+}
+
+.login-bottom-hipper:hover .login-bottom-ic{
+    -fx-fill: #C30052;
+}
+
+
+/**
+Settings Panel
+ */
+
+.login-settings-pane{
+    -fx-background-color: linear-gradient(to top right , #01b0f1, #00c3f3, #00d5ee, #29e5e4, #69f4d7);
+
+}
+.login-settings-box{
+    -fx-background-color: #ffffff;
+}
+
+.login-settings-big-icons{
+    -fx-fill: #dae8ea;
+}
+
+.login-settings-input-labels{
+    -fx-font-family: 'Lato Regular';
+    -fx-text-fill: #9CAAAC;
+    -fx-font-size: 13px;
+}
+
+.login-settings-big-label{
+    -fx-font-family: 'Roboto Medium';
+    -fx-text-fill: #f8f9fc;
+    -fx-font-size: 26px;
+}
+
+.login-settings-back-btn{
+    -fx-cursor: hand;
+    -fx-fill: #2c3e50;
+}
+.login-settings-back-btn:hover{
+    -fx-fill: linear-gradient(to right top, #f1010b, #ff004e, #ff0088, #ff3cc1, #f469f4);
+}
+/*
+END LOGIN SECTION
+ */

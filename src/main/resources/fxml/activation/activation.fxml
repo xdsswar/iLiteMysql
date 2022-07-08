@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import com.xd.controls.XButton?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane prefHeight="300.0" prefWidth="513.0" stylesheets="@../../main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inv.ui.ctrl.activation.Activation">
+   <children>
+      <VBox layoutX="98.0" layoutY="30.0" prefHeight="265.0" prefWidth="297.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <Label styleClass="login-title-label" text="Evanto username">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" top="45.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="userTxt" promptText="Evanto username" styleClass="login-input">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </TextField>
+            <Label styleClass="login-title-label" text="Purchase code">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="codeTxt" promptText="Purchase code" styleClass="login-input" stylesheets="@../../main.css">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </TextField>
+            <XButton fx:id="activateTxt" prefHeight="36.0" prefWidth="335.0" styleClass="login-btn" text="Activate">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="30.0" />
+               </VBox.margin>
+            </XButton>
+         </children>
+      </VBox>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="243.0" layoutY="278.0" styleClass="login-error-label" text="Invalid" visible="false" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <ProgressBar fx:id="progressBar" layoutX="33.0" layoutY="5.0" prefHeight="6.0" prefWidth="200.0" progress="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="-1.0" />
+   </children>
+</AnchorPane>

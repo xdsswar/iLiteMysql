@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.xd.controls.XButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="150.0" prefWidth="460.0" style="-fx-background-color: #ffffff;" stylesheets="@../../main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inv.ui.ctrl.dialogs.Dialog">
+   <children>
+      <AnchorPane layoutX="131.0" layoutY="45.0" prefWidth="380.0" styleClass="dialog-button-container" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView id="imageView" fx:id="dialogIcon" fitHeight="50.0" fitWidth="48.0" layoutX="10.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="33.0">
+               <image>
+                  <Image url="@../../assets/dialogs/info.png" />
+               </image>
+            </ImageView>
+            <Label id="message" fx:id="messageTxt" layoutX="71.0" layoutY="21.0" prefHeight="60.0" prefWidth="303.0" styleClass="dialog-label-txt" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has" wrapText="true" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="2.0" />
+         </children>
+      </AnchorPane>
+      <HBox id="hbox" alignment="CENTER_RIGHT" layoutX="117.0" layoutY="135.0" prefHeight="50.0" prefWidth="200.0" styleClass="dialog-button-container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <XButton id="okButton" fx:id="okBtn" mnemonicParsing="false" prefWidth="85.0" styleClass="dialog-ok-btn" text="Ok">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </XButton>
+            <XButton id="cancelButton" fx:id="cancelBtn" mnemonicParsing="false" prefWidth="85.0" styleClass="dialog-ok-btn" text="Cancel">
+               <HBox.margin>
+                  <Insets left="10.0" right="20.0" />
+               </HBox.margin>
+            </XButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

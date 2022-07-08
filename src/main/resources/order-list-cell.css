@@ -1,0 +1,41 @@
+.order-action-item-ic-box{
+    -fx-background-color: #8e44ad;
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+}
+
+.order-action-item-btn{
+    -fx-cursor: hand;
+    -fx-border-radius: 100;
+    -fx-background-radius: 100;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.order-action-item-small-label{
+    -fx-text-fill: #2c3e50;
+    -fx-font-family: 'Roboto Regular';
+    -fx-font-size: 14px;
+}
+
+.order-action-item-ic{
+    -fx-fill: #f3f4f7;
+}
+
+.order-list-cell-header{
+    -fx-background-color: #a0522d;
+}
+.order-list-cell-header-label{
+    -fx-text-fill: #f8f9fc;
+    -fx-font-family: 'Roboto Medium';
+    -fx-font-size: 14px;
+}
+
+.order-list-cell-ic-remove{
+    -fx-fill: #ff6600;
+}
+.order-action-item-btn:hover .order-list-cell-ic-remove{
+    -fx-fill: #bd081c;
+}
+
+

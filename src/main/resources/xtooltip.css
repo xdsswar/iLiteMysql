@@ -1,0 +1,51 @@
+.xtooltip-base{
+    -fx-background-color: transparent;
+}
+.xtooltip-vbox{
+    -fx-background-color: rgba(255,255,255,0.8);
+    -fx-border-color: rgba(230,230,230,0.8);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 5 15 5 15;
+}
+.xtooltip-header{
+    -fx-font-family: 'Roboto Regular';
+    -fx-font-weight: bold;
+    -fx-font-size:14px ;
+    -fx-text-fill: #666;
+    -fx-padding: 2 0 2 0;
+}
+
+.xtooltip-l1{
+    -fx-font-family: 'Roboto Regular';
+    -fx-text-fill: #63CF72;
+    -fx-font-size: 13px;
+    -fx-padding: 2 0 2 0;
+}
+.xtooltip-l2{
+    -fx-font-family: 'Roboto Regular';
+    -fx-text-fill: #F36368;
+    -fx-font-size: 13px;
+    -fx-padding: 2 0 2 0;
+}
+
+.xtooltip-l-alter {
+    -fx-font-family: 'Roboto Regular';
+    -fx-text-fill: #666;
+    -fx-font-size: 13px;
+}
+
+
+/**
+Node hover style
+ */
+
+.node-hover{
+
+}
+
+.node-hover:hover{
+    -fx-scale-x: 1.04;
+    -fx-scale-y: 1.04;
+    -fx-scale-z: 1.04;
+}

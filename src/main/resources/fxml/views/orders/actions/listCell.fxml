@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.xd.controls.XButton?>
+<?import com.xd.ss.war.awesome.FontAwesomeIconView?>
+<?import com.xd.ss.war.materialicon.MaterialIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="40.0" prefHeight="40.0" stylesheets="@../../../../main.css" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="-36.0" layoutY="-24.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="icVbox" alignment="CENTER" minWidth="40.0" prefHeight="40.0" prefWidth="40.0" styleClass="order-action-item-ic-box">
+               <children>
+                  <FontAwesomeIconView glyphName="CUBES" size="18" styleClass="order-action-item-ic" />
+               </children>
+            </VBox>
+            <AnchorPane prefHeight="40.0" prefWidth="2000.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" layoutX="74.0" layoutY="-86.0" prefHeight="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label fx:id="nameLabel" minWidth="5.0" prefHeight="17.0" prefWidth="1000.0" styleClass="cell-n-label" text="Item Name">
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane minWidth="100.0" prefHeight="200.0" prefWidth="110.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label fx:id="qtyField" alignment="CENTER_RIGHT" minWidth="60.0" prefWidth="60.0" styleClass="order-action-item-small-label" text="0">
+                           <HBox.margin>
+                              <Insets left="2.0" right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="unitLabel" minWidth="30.0" prefWidth="30.0" styleClass="order-action-item-small-label" text="U">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="899.0" layoutY="10.0" minWidth="100.0" prefHeight="200.0" prefWidth="110.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label fx:id="dcLabel" alignment="CENTER_RIGHT" minWidth="30.0" prefWidth="30.0" styleClass="order-action-item-small-label" text="\$">
+                           <HBox.margin>
+                              <Insets left="2.0" right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="discField" minWidth="60.0" prefWidth="60.0" styleClass="order-action-item-small-label" text="0">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </AnchorPane>
+            <AnchorPane layoutX="899.0" layoutY="10.0" minWidth="100.0" prefHeight="200.0" prefWidth="130.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label fx:id="pcLabel" alignment="CENTER_RIGHT" minWidth="30.0" prefWidth="30.0" styleClass="order-action-item-small-label" text="\$">
+                           <HBox.margin>
+                              <Insets left="2.0" right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="priceField" minWidth="60.0" prefWidth="60.0" styleClass="order-action-item-small-label" text="0">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="899.0" layoutY="10.0" minWidth="100.0" prefHeight="200.0" prefWidth="130.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label fx:id="tcLabel" alignment="CENTER_RIGHT" minWidth="30.0" prefWidth="30.0" styleClass="order-action-item-small-label" text="\$">
+                           <HBox.margin>
+                              <Insets left="2.0" right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="totalField" minWidth="60.0" prefWidth="60.0" styleClass="order-action-item-small-label" text="0">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="939.0" layoutY="10.0" minWidth="40.0" prefHeight="40.0" prefWidth="40.0">
+               <children>
+                  <VBox alignment="CENTER" layoutX="-36.0" layoutY="-80.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <XButton fx:id="removeItemBtn" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" maxHeight="20.0" maxWidth="20.0" minHeight="30.0" minWidth="30.0" prefHeight="20.0" prefWidth="20.0" styleClass="order-action-item-btn" text=" ">
+                           <graphic>
+                              <MaterialIconView glyphName="CLOSE" size="25" styleClass="order-list-cell-ic-remove" />
+                           </graphic>
+                           <tooltip>
+                              <Tooltip styleClass="home-tooltip" text="Remove Item" />
+                           </tooltip>
+                        </XButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
